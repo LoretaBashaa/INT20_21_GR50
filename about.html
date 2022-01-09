@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device, initial-scale=1.0">
+         <title>Bio pharmacy-MALVA</title>
+    </head>
+    <style>
+         *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Anton', sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
+             }
+              .header{
+                    min-height: 100vh;
+                    width: 100%;
+                    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(foto1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                   }
+                   nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+               }
+               nav img{
+                    width: 150px ;
+                   }
+                   .nav-links{
+                flex: 1;
+                text-align: right;
+
+                      }
+          .nav-links ul li{
+              list-style: none;
+              display: inline-block;
+              padding: 8px 12px;
+              position: relative;
+              }
+          .nav-links ul li a{
+              color: #fff;
+              text-decoration: none;
+              font-size:  23px;
+              }
+              .nav-links  ul li::after{
+              content: '';
+              width: 0%;
+              height: 2px;
+              background: #1ead42;
+              display: block;
+              margin: auto;
+              transition: 0.5s;
+              }
+         .nav-links ul li:hover::after{
+              width: 100%;
+              }
+            img{
+                width:120px ;
+                height: 120px;
+               }
+               .njoftime{
+                width: 40%;
+                margin: auto;
+                text-align: center;
+                padding-top: 80px;
+               }
+               p{
+                   color: black;
+                   font-size: 14px;
+                   font-weight: 300;
+                   line-height: 22px;
+                   padding: 12px;
+               }
+               .rresht{
+                   display: flex;
+                   justify-content: space-between;
+               }
+               .rrethnesh{
+                   flex-basis: 31%;
+                   background: rgb(228, 228, 228);
+                   border-radius: 10px;
+                   border-bottom: 5%;
+                   padding: 20px 15px;
+                   box-sizing: border-box;
+               }
+               h3{
+                   text-align: center;
+                   font-weight: 600;
+                   margin: 10px 0;
+               }
+               .rrethnesh:hover{
+                   box-shadow: 0 0 20px 0px #1ead42;
+               }
+               .kont{
+                   margin: 20px auto;
+                   width: 97%;
+                   background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)), url(foto4.jpg) ;
+                   background-position: center;
+                   background-size: cover;
+                   border-radius: 10px;
+                   text-align: center;
+                   padding: 100px 0 ;
+               }
+               .kont:hover{
+                   box-shadow: 0 0 80px 30px #1ead42;
+               }
+               .kont h1{
+                   color: #1ead42;
+                   margin-bottom: 40px;
+                   padding: 0%;
+               }
+               .kliko{
+               display: inline-block;
+               text-decoration: none;
+               color: #1ead42;
+               border: 1px solid #1ead42;
+               padding: 12px 34px;
+               font-size: 23px;
+               background: transparent;
+               position: relative;
+               cursor: pointer;
+              }
+         .kliko:hover{
+                border: 1px solid black;
+                background: black;
+                transition: 1s;
+                }
+    </style>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="logo.png" alt="logo"></a>
+                <div class="nav-links">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+                    <ul>
+                        <li><a href="home.html">BALLINA</a></li>
+                        <li><a href="about.html">NJOFTIME</a></li>
+                        <li><a href="bimet.html">BIMET</a></li>
+                        <li><a href="kerpudhat.html">KERPUDHAT</a></li>
+                        <li><a href="porosia.html">POROSIA</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="njoftime" >
+                <h1 style="font-size: 36px; font-weight: 600; color: #1ead42;text-align: center;">
+                    Njoftime rreth bio farmacise tone
+                </h1>
+            </nav>    
+                <div class="rresht">
+                  <div class="rrethnesh">
+                     <h3> <i>Rreth nesh</i></h3>
+                      <p>  <b>
+                          Farmacia jone eshte nje nga farmacit e paketa qe krijon mundesi sherimi bio, dhe kjo nga bime dhe kerpudha qe gjenden ne Kosove. Ne faqen tone munde te gjeni me shume informata rreth nesh, duke perfshire llojet e bimeve dhe kerpudhave, menyren si perdoren dhe mund te rezervoni per ndonje nga barnat tona me porosi online.
+                          </b>
+                      </p>
+                 </div>
+                 <div class="rrethnesh">
+                    <h3><i>Historiku</i></h3>
+                    <p>
+                       <b> Bio farmacia jone ka marr emrin Malva nga nje prej luleve sheruese te cilen e kemi perdorur per here te pare per sherim, eshte farmaci qe eshte themeluar qe gati 2 vite dhe ploteson kriteret e nevojshme per te funksionuar ne menyren me te mire</b>
+                    </p>
+                </div>
+                   <div class="rrethnesh">
+                      <h3><i> Kriteret e punes</i></h3>
+                     <p>
+                       <b>
+                           <ol>
+                               <li>Mblidhen kur kane cilesine me te mire, ne sasi te percaktuar, ne kushte te mira atmosferike, ne vende te pastra dhe jo te kontaminuara</li>
+                               <li>Behet vjelja ne dite te mire dhe sasi te caktuar</li>
+                               <li>Pastaj behet tharja ne salla te pasterta, te ajrosura dhe te mirembajtura</li>
+                           </ol>
+                       </b>
+                     </p>
+                  </div>
+                </div>
+     </section>
+     <section>
+         <h3>Informata me te shumta rreth bimeve dhe kerpudhave qe perdorim mund ti gjeni: <a href="http://helvetas-ks.org/s4re/wp-content/uploads/2014/05/Atllasi_i_Bimeve_Mjeksore_Aromatike_dhe_Kerpudhave_-_FINAL.pdf" target="_blank">Ketu</a></h3>
+     </section>
+     <section class="kont">
+         <h1>
+             Per cdo paqartesi na kontaktoni ketu...
+         </h1>
+         <a href="porosia.html" class="kliko" target="blank">KONTAKTO</a>
+     </section>
+    </body>
+</html>
