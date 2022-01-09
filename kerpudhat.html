@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" >
+        <title>Bio pharmacy-MALVA</title>
+    </head>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Anton', sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
+             }
+             nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+               }
+               nav img{
+                    width: 150px ;
+                   }
+                   .nav-links{
+                flex: 1;
+                text-align: right;
+
+                      }
+          .nav-links ul li{
+              list-style: none;
+              display: inline-block;
+              padding: 8px 12px;
+              position: relative;
+              }
+          .nav-links ul li a{
+              color: #fff;
+              text-decoration: none;
+              font-size:  23px;
+              }
+              .nav-links  ul li::after{
+              content: '';
+              width: 0%;
+              height: 2px;
+              background: #1ead42;
+              display: block;
+              margin: auto;
+              transition: 0.5s;
+              }
+         .nav-links ul li:hover::after{
+              width: 100%;
+              }
+              .header{
+                    min-height: 100vh;
+                    width: 100%;
+                    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(foto/foto6.png);
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                   }
+            img{
+                width:120px ;
+                height: 120px;
+               }
+               #titull{
+                   color: white;
+                   text-align: center;
+               }
+               th,td{
+                   border: 1px solid white;
+                   border-radius: 15px;
+               }
+               table,tr,th{
+                   padding: 5px 40px;
+                   font-size: 25px;
+                   margin-left: 100px;
+                   margin-right: 100px;
+                   margin-top: 80px;
+                 }
+                 th{
+                     background-color: black;
+                 }
+               td
+                  {
+                  border: none;
+                  text-align: center;
+                  }
+                  tr,td{
+                      border: 1px solid #1ead42;
+                      border-radius: 30px;
+                      border-spacing: 10px;
+                      color: whitesmoke;
+                  }
+                  p{
+                      text-align: left;
+                      padding-top: 20px;
+                      font-size: 15px;
+                  }
+                  .t2{
+                      border: 2px;
+                      border-color: black;
+                      border-radius: 8px;
+                  }
+                  #tabela{
+                      border: #1ead42 solid 2px;
+                      padding: 0;
+                      margin-bottom: 0%;
+                      margin-top: 0%;
+                      margin-left: 0%;
+                      margin-right: 0%;
+                  }
+                  #rresht{
+                      border: none;
+                  }
+                  .hero{
+                      background: rgb(2, 12, 70);
+                      height: 100vh;
+                      width: 100%;
+                      position: relative;
+                  }
+                  .hero h1{
+                      text-align: center;
+                      padding-top: 60px;
+                      font-size: 40px;
+                      color: honeydew;
+                  }
+                  .slide{
+                      display: flex;
+                      width: 4000px;
+                      transition: 0.5s;
+                  }
+                  .slide:hover{
+                    box-shadow: 0 0 100px 0px #1ead42;
+
+                  }
+                 .slidec{
+                     width: 1900px;
+                     height: 300px;
+                     position: relative;
+                 }
+                 .ui{
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     height: 100%;
+
+                 }
+                 .ui img{
+                     height: 100%;
+                     width: 300px;
+                     border-radius: 10px;
+                 }
+                 .slidet{
+                     background: rgb(6, 114, 69);
+                     width: 520px;
+                     height: 270px;
+                     position: absolute;
+                     left: 0;
+                     top: 50%;
+                     transform: translateY(-50%);
+                     border-radius: 10px;
+                     color: rgb(248, 244, 244);
+                     padding: 45px;
+                     box-sizing: border-box;
+                     z-index: 2;
+                 }
+                 .slidet p{
+                     font-size: 18px;
+                     line-height: 24px;
+                 }
+                 .slidet h3{
+                     margin: 35px 0 5px;
+                     color: ivory;
+                 }
+                 .container{
+                     width: 800px;
+                     height: 400px;
+                     position: absolute;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%,-50%);
+                 }
+                 .indicator{
+                     position: absolute;
+                     left: 50%;
+                     transform: translateX(-50%);
+                     bottom: -50px;
+                 }
+                 .btn{
+                     display: inline-block;
+                     height: 15px;
+                     width: 15px;
+                     margin: 4px;
+                     border-radius: 15px;
+                     background: white;
+                     cursor: pointer;
+                 }
+                 .active{
+                     width: 45px;
+                 }
+                 .testimonial{
+                     width: 100%;
+                     height: 100%;
+                    overflow: hidden;
+                 }
+
+ 
+    </style>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="foto/logo.png" alt=""></a>
+                <div class="nav-links">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+                    <ul>
+                        <li><a href="home.html">BALLINA</a></li>
+                        <li><a href="about.html">NJOFTIME</a></li>
+                        <li><a href="bimet.html">BIMET</a></li>
+                        <li><a href="kerpudhat.html">KERPUDHAT</a></li>
+                        <li><a href="porosia.html">POROSIA</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <table>
+                <tr>
+                <th>Lloji</th>
+                <th>Vjelja</th>
+                <th>Tharja</th>
+                <th>Perhapja</th>
+                <th>Sasia</th>
+                <th>Cmimi</th>
+                </tr>
+                <tr>
+                    <td> Amanita e Cezarit</td>
+                    <td> Duhet të bëhet me kujdes, duhet të
+                        transportohet në shporta ose në krojshe në
+                        mënyrë që të mos ndrydhet dhe të ketë ajrosje.
+                        Vjelja zgjatë nga pranvera deri në vjeshtë</td>
+                    <td> Para se të thahet duhet të prehet në
+                        rriska të holla 1-3 mm. Tharja duhet të bëhet
+                        në tharëse ose në mungesë të tharëses në diell
+                        në shtresa të holla. Kërpudhat e thara duhet të
+                        paketohen në kuti nga kartoni, në thasë nga
+                        letra ose në arka të drunjta. Pas tharjes duhet të
+                        bëhet klasifikimi në klasë të parë apo të dytë</td>
+                    <td>Rritet në pyllin e
+                        dushkut në lëndina të vogla të ngrohta dhe
+                        me dritë. Ështe më e rrallë në krahasim me
+                        kërpudhat tjera të zakonshme.</td>
+                    <td>1 kg melmese</td>
+                    <td>12 euro</td>
+                </tr>
+                <tr>
+                     <td >Pankushe</td> 
+                    <td>Vjelen si të freskëta në shporta ose
+                        në krojshe me thupra gjatë pranverës, verës
+                        dhe vjeshtës (V-X). Kërpudhat e thara duhet të
+                        paketohen në kuti nga kartoni, në thasë nga
+                        letra ose në arka të drunjta.
+                        Pas tharjes duhet të bëhet klasifikimi në klasë
+                        të parë apo të dytë. Konservimi bëhet pasi të
+                        zihen për 15-20 minuta në ujë valë ku pastaj ju
+                        shtohet kripë kuzhine dhe thartirë limoni.</td>
+                    <td>: Duhet të bëhet në furra ose në diell
+                        dhe të prehen në rriska të holla ku bëhet tharja.
+                        </td>
+                    <td>Mjaft e shpeshtë
+                        në pyllin e dushkut, gështenjës dhe ahut.
+                        Zakonisht më e shpeshtë është në pyjet
+                        e dushkut, sidomos në pyje ku depërton
+                        ngapak drita.</td>
+                    <td>1 kg melmese</td>
+                    <td>8 euro</td>
+                </tr>
+                <tr>
+                    <td>Dhelprajka</td>
+                    <td> Bëhet me dorë, duke filliar në pranverë
+                        deri në vjeshtën e vonë (Vl-Xl). Duhet të
+                        transporohet në shporta në mënyrë që të mos
+                        ndrydhet dhe të ketë ajrosje.</td>
+                    <td>Para se të thahet prehet në rriska të
+                        holla ose mund të thahet komplet kërpudha.
+                        Tharja duhet të bëhet në tharëse ose në
+                        mungesë tharëses ajo thahet në diell në
+                        shtresa të holla.</td>
+                    <td>: Në pyjet gjetherënëse
+                        dhe në pyje halore është shumë e shpeshtë.</td>
+                    <td>1 kg melmese</td>
+                    <td>5 euro</td>
+                </tr>
+                <tr>
+                    <td>Laktaria e shishme</td>
+                    <td> Bëhet në vjeshtë (IX-XI) me dorë, me
+                        kujdes që të mos thahet, sepse nga pjesët e
+                        lënduara del një lëngë ngjyrë portokalli. Duhet
+                        të transportohet në shporta në mënyrë që të
+                        mos ndrydhet dhe të ketë ajrosje.</td>
+                    <td>Zakonisht nuk thahen, por përdoren të
+                        freskëta ose të konservuara</td>
+                    <td>Rritet në pyje të
+                        halorëve, shkurreve, fiernave etj. dhe mjaft mirë
+                        rritet edhe në hapësira ku ka dritë.</td>
+                    <td>1 kg kerpudha</td>
+                    <td>6 euro</td>
+                </tr>
+            </table>
+            <div class="hero">
+                      <h1>
+                         5 llojet e kerpudhave sheruese
+                      </h1>
+                     <div class="container">
+                               <div class="testimonial">
+                                          <div class="indicator">
+                                              <span class="btn active"></span>
+                                              <span class="btn"></span>
+                                              <span class="btn"></span>
+                                              <span class="btn"></span>
+                                              <span class="btn"></span>
+                                         </div>
+                                 <div class="slide" id="slide">
+                                        <div class="slidec">
+                                                 <div class="slidet">
+                                                       <p>Përdorët si ushqim dietik ose si
+                                                        mëlmesë në ushqime të ndryshme.</p>
+                                                             <h3>Amanita e Cezarit</h3>
+                                                 </div>
+                                           <div class="ui">
+                                                  <img src="foto/foto37 ..jpg" alt="">
+                                          </div>
+                                     </div>
+                                     <div class="slidec">
+                                         <div class="slidet">
+                                                 <p>Përdoret si ushqim dietik ose si
+                                                    mëlmesë në ushqime të ndryshme.</p>
+                                                       <h3>Pankushe</h3>
+                                         </div>
+                                            <div class="ui">
+                                               <img src="foto/foto38 ..jpg" alt="">
+                                           </div>
+                                     </div>
+                                      <div class="slidec">
+                                              <div class="slidet">
+                                                           <p>Përdoret si ushqim dietik ose si
+                                                            mëlmesë në ushqime të ndryshme.</p>
+                                                               <h3>Laktaria e shishme</h3>
+                                             </div>
+                                              <div class="ui">
+                                                       <img src="foto/foto40 ..png" alt="">
+                                             </div>
+                                    </div>
+                                     <div class="slidec">
+                                             <div class="slidet">
+                                                   <p>Përdoret si ushqim dietik ose si
+                                                    mëlmesë në ushqime të ndryshme.</p>
+                                                    <h3>Dhelprajka,</h3>
+                                             </div>
+                                             <div class="ui">
+                                                  <img src="foto/foto39 ..jpg" alt="">
+                                             </div>
+                                     </div>
+                                      <div class="slidec">
+                                                <div class="slidet">
+                                                       <p>Përdoret si ushqim dietik ose si
+                                                        mëlmesë në ushqime të ndryshme.</p>
+                                                      <h3>Marçelasi kon</h3>
+                                               </div>
+                                             <div class="ui">
+                                                   <img src="foto/foto41.jpg" alt="">
+                                            </div>
+                                    </div>
+                             </div>
+                      </div>
+              </div>
+        </section>
+       
+        
+    </body>
+    <script>
+        var btn= document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick=function(){
+            slide.style.transform="translateX(0px)"; 
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }  
+            this.classList.add("active");
+        }
+        btn[1].onclick=function(){
+            slide.style.transform="translateX(-800px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }  
+            this.classList.add("active");
+            
+        }
+        btn[2].onclick=function(){
+            slide.style.transform="translateX(-1600px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }  
+            this.classList.add("active");
+            
+        }
+        btn[3].onclick=function(){
+            slide.style.transform="translateX(-2400px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }  
+            this.classList.add("active");
+        }
+        btn[4].onclick=function(){
+            slide.style.transform="translateX(-3200px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }  
+            this.classList.add("active");
+        }
+    </script>
+</html>
