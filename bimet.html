@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bio pharmacy-MALVA</title>
+    </head>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Anton', sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
+             }
+             #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+             .lista{
+                 font-size: 20px ;
+             }
+             button{
+                 border: none;
+                 outline: 0;
+                 display: inline-block;
+                 padding: 10px 25px;
+                 color: white;
+                 background-color: rgb(144, 25, 160);
+                 text-align: center;
+                 cursor: pointer;
+                 margin-left: 550px;
+             }
+             button:hover{
+                 background-color: rgb(8, 8, 8);
+                 color: white;
+             }
+             nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+               }
+               nav img{
+                    width: 150px ;
+                   }
+                   .nav-links{
+                flex: 1;
+                text-align: right;
+
+                      }
+          .nav-links ul li{
+              list-style: none;
+              display: inline-block;
+              padding: 8px 12px;
+              position: relative;
+              }
+          .nav-links ul li a{
+              color: #fff;
+              text-decoration: none;
+              font-size:  23px;
+              }
+              .nav-links  ul li::after{
+              content: '';
+              width: 0%;
+              height: 2px;
+              background: #1ead42;
+              display: block;
+              margin: auto;
+              transition: 0.5s;
+              }
+               .nav-links ul li:hover::after{
+              width: 100%;
+              }
+              .header{
+                    min-height: 100vh;
+                    width: 100%;
+                    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(fotot/foto2.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                   }
+                img{
+                width:120px ;
+                height: 120px;
+               }
+               img{
+                width: 80%;
+                padding: 3px;
+               }
+               article{
+                 text-align: center;
+                   }
+                  h3{
+                  text-align: center;
+                  color: rgb(8, 8, 8);
+                    }
+                   p{
+                  text-align: center;
+                  color: rgb(14, 13, 13);
+                      }
+                      footer{ 
+                          background-color: #D3D3D3;
+                          text-align: center;
+                          padding: 20px;
+                            }
+                     iframe{
+                        width: 80%;
+                    }
+    </style>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="fotot/logo.png" alt=""></a>
+                <div class="nav-links">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+                    <ul>
+                        <li><a href="home.html">BALLINA</a></li>
+                        <li><a href="about.html">NJOFTIME</a></li>
+                        <li><a href="bimet.html">BIMET</a></li>
+                        <li><a href="kerpudhat.html">KERPUDHAT</a></li>
+                        <li><a href="porosia.html">POROSIA</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+               <button tybe="button" style="font-size: 20px;" onclick="myFunction()">Lista e Bimeve</button>
+               <div class="lista">
+                      <p id="demo1" style="color: white;"></p>
+                      <p id="demo2" style="color: white;"></p>
+                      <p id="demo3" style="color: white;"></p>
+                      <p id="demo4" style="color: white;"></p>
+                      <p id="demo5" style="color: white;"></p>
+                      <p id="demo6" style="color: white;"></p>
+                      <p id="demo7" style="color: white;"></p>
+                      <p id="demo8" style="color: white;"></p>
+                      <p id="demo9" style="color: white;"></p>
+                      <p id="demo10" style="color: white;"></p>
+                      <p id="demo11" style="color: white;"></p>
+                      <p id="demo12" style="color: white;"></p>
+                      <p id="demo13" style="color: white;"></p>
+                      <p id="demo14" style="color: white;"></p>
+                      <p id="demo15" style="color: white;"></p>
+                      <p id="demo16" style="color: white;"></p>
+                      <p id="demo17" style="color: white;"></p>
+                      <p id="demo18" style="color: white;"></p>
+                      <p id="demo19" style="color: white;"></p>
+                      <p id="demo20" style="color: white;"></p>
+                      <p id="demo21" style="color: white;"></p>
+                      <p id="demo22" style="color: white;"></p>
+                      <p id="demo23" style="color: white;"></p>
+                      <p id="demo24" style="color: white;"></p>
+                      <p id="demo25" style="color: white;"></p>
+                      <p id="demo26" style="color: white;"></p>
+                      <p id="demo27" style="color: white;"></p>
+                      <p id="demo28" style="color: white;"></p>
+                      <p id="demo29" style="color: white;"></p>
+                      <p id="demo30" style="color: white;"></p>
+                      <p id="demo31" style="color: white;"></p>
+                      <p id="demo32" style="color: white;"></p>
+                      <p id="demo33" style="color: white;"></p>
+                      <p id="demo34" style="color: white;"></p>
+                      <p id="demo35" style="color: white;"></p>
+                      <p id="demo36" style="color: white;"></p>
+</div>
+<script>
+    function myFunction(){
+        document.getElementById("demo1").innerHTML = "Achillea millefolium L.";
+        document.getElementById("demo2").innerHTML = "Artemisia absinthium L. ";
+        document.getElementById("demo3").innerHTML = "Agrimonia eupatoria L. ";
+        document.getElementById("demo4").innerHTML = "Althea officinalis L.";
+        document.getElementById("demo5").innerHTML = "Bellis perenis L.";
+        document.getElementById("demo5").innerHTML = "Betula pendula Roth. ";
+        document.getElementById("demo6").innerHTML = "Centaurium erythrea L.";
+        document.getElementById("demo7").innerHTML = "Chelidonium majus L. ";
+        document.getElementById("demo8").innerHTML = "Cichorium inthybus L. ";
+        document.getElementById("demo9").innerHTML = "Colchicum autumnale L.  ";
+        document.getElementById("demo10").innerHTML = "Crataegus monogyna Jacq.   ";
+        document.getElementById("demo11").innerHTML = "Equisetum arvense L. ";
+        document.getElementById("demo12").innerHTML = "Fumaria officinalis L.";
+        document.getElementById("demo13").innerHTML = "Gentiana lutea L.  ";
+        document.getElementById("demo14").innerHTML = "Hedera helix L.";
+        document.getElementById("demo15").innerHTML = "Hypericum perforatum L. ";
+        document.getElementById("demo16").innerHTML = "Juniperus communis L. ";
+        document.getElementById("demo17").innerHTML = "Malva sylvestris L.  ";
+        document.getElementById("demo18").innerHTML = "Matricaria recutita L.";
+        document.getElementById("demo19").innerHTML = "Melilotus officinalis L. ";
+        document.getElementById("demo20").innerHTML = "Mentha piperita L. ";
+        document.getElementById("demo21").innerHTML = "Origanum vulgare L";
+        document.getElementById("demo22").innerHTML = "Prunus spinosa L. ";
+        document.getElementById("demo23").innerHTML = "Primula veris L.";
+        document.getElementById("demo24").innerHTML = "Pulmonaria officinalis L.";
+        document.getElementById("demo25").innerHTML = "Ruta graveolens L. ";
+        document.getElementById("demo26").innerHTML = "Sambucus nigra L.";
+        document.getElementById("demo27").innerHTML = "Taraxacum officinale L.";
+        document.getElementById("demo28").innerHTML = "Thymus vulgaris L.";
+        document.getElementById("demo29").innerHTML = "Tilia cordata L";
+        document.getElementById("demo30").innerHTML = "Tussilago farfara L.";
+        document.getElementById("demo31").innerHTML = "Vaccinium myrtillus L. ";
+        document.getElementById("demo32").innerHTML = "Valeriana officinalis L.  ";
+        document.getElementById("demo33").innerHTML = "Verbascum thapsus L. ";
+        document.getElementById("demo34").innerHTML = " Viola: ";
+        document.getElementById("demo35").innerHTML = "tricolor L";
+        document.getElementById("demo36").innerHTML = "odorata L.";
+    }
+</script>
+        </section>
+        <section style="margin: 40px; padding: 5px;">
+            <h2 style="text-align: center;">
+                Bimet sheruese qe mund ti gjeni tek ne
+            </h2> <br><br>
+            <p style="text-align: left;">
+                <u> <b> Me poshte gjeni ti gjitha bimet sheruese qe ju ofrojme </u>, te cilat gjithashtu ndodhen dhe rriten brenda Kosoves, ne zona te ndryshme te saj. <br>
+                Kemi permendur emrat e seciles bime dhe kemi bashkangjitur fotografin e seciles, per te bere me te lehte kemi paraqitur edhe <mark> menyren si perdoren ato.</mark> </b>
+            </p>
+            <br>
+            <br>
+            <p style="text-align: left;"> <b> Gjithashtu <span style="color: rebeccapurple;">Me larte eshte paraqitur lista e te gjitha llojeve te bimeve sheruese qe mund ti gjeni tek ne, ato dallojne nga emertimet ne figura per shkake se me larte jane te radhitura sipas emertimit ne gjuhen latine.</span> </b></p>
+        </section>
+        <section>
+            <table>
+                <tr>
+                  <td>
+                        <article>
+                            <img id="myImg" src="fotot/foto5.jpg" alt="Barpezmi">
+                            <!-- The Modal -->
+                             <div id="myModal" class="modal">
+                              <span class="close">&times;</span>
+                              <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                                </div>
+                            <h3>
+                               Barpezmi
+                            </h3>
+                            <p><b>Përdorimi:</b> Kundër artritisit, astmës, hemorroideve, në përmirësimin e oreksit kundër gazrave në organet e tretjes etj
+                               
+                            </p>
+                        </article>
+                    </td>
+                 <td>
+                     <article>
+                         <img  id="myImg" src="fotot/foto7.jpg" alt="">
+                         <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                          </div>
+                         <h3>
+                             Pelini
+                         </h3>
+                         <p>
+                            <b>Përdorimi:</b> Tradicionalisht përdoret për stimulim të oreksit, kundër të thatit në lukth 
+                            dhe në zorrë. Përdoret edhe për shërimin e sëmundjeve lokale të lëkurës
+                        
+                         </p>
+                     </article>
+                 </td>
+                 <td>
+                     <article>
+                         <img id="myImg" src="fotot/foto8.jpg" alt="">
+                         <div id="myModal" class="modal">
+                         <span class="close">&times;</span>
+                         <img class="modal-content" id="img01">
+                         <div id="caption"></div>
+                        </div>
+                        <h3>
+                            Rodhëza
+                        </h3>
+                        <p>
+                            <b>Përdorimi:</b> Tradicionalisht është përdorë për ndaljen e gjakderdhjes, kundër diarresë, 
+                            shërimit të plagëve, veshkave, reumatizmit dhe artritisit.
+                        </p>
+                     </article>
+                 </td>
+                 <td>
+                    <article>
+                        <img id="myImg" src="fotot/foto9.jpg" alt="">
+                        <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                       <h3>
+                        Mullanja mjekësore
+                       </h3>
+                       <p>
+                       <b>Përdorimi:</b> Tradicionalisht është përdor kundër kollitjes, ftohjes, ulcerave, inflamacionit 
+                        të gojës, të fytit dhe të mushkërive. 
+                       </p>
+                    </article>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <article>
+                    <img src="fotot/foto10.jpg" alt="">
+                    <h3>
+                        Luleshqerre, 
+                    </h3>
+                    <p>
+                       <b> Përdorimi:</b> Forcon prostatën, pastron gjakun dhe mushkëritë, shëron lëndimet e brendshme 
+                           dhe lëkurore. 
+                    </p>
+                </article>
+            </td>
+            <td>
+                <article>
+                    <img src="fotot/foto11.jpg" alt="">
+                   <h3>
+                    Mështekna
+                   </h3>
+                   <p>
+                   <b> Përdorimi:</b> Gjethet përdoren në trajtimin e infeksioneve të rrugëve urinare dhe si diuretik 
+                    në raste të sëmundjeve reumatizmale. Lëngu (vaj) përdoret kundër ekzemave,etj.
+                   </p>
+                </article>
+            </td>
+            <td>
+               <article>
+                   <img src="fotot/foto12.jpg" alt="">
+                  <h3>
+                      Kantarion
+                  </h3>
+                  <p>
+                    <b>Përdorimi:</b> Tradicionalisht është përdorë herba kundër etheve, sëmundjeve të organeve 
+                       tretëse, rrugëve urinare, pastrimit të gjakut etj.
+                  </p>
+               </article>
+           </td>
+           <td>
+            <article>
+                <img src="fotot/foto13.jpg" alt="">
+                <h3>
+                    Latrapeci
+                </h3>
+                <p>
+                    <b>Përdorimi:</b> Tradicionalisht është përdorë kundër lythave dhe sëmudjeve tjera të lëkurës. 
+                </p>
+            </article>
+        </td>
+       </tr>
+    <tr>
+        <td>
+            <article>
+                <img src="fotot/foto14.jpg" alt="">
+                <h3>
+                    Cikore
+                </h3>
+                <p>
+                <b>Përdorimi:</b> Tradicionalisht është përdorë kundër gurëve në mëshikëzën dhe në veshka, 
+                   në pastrimin e gjakut dhe kundër reumatizmit.
+                </p>
+            </article>
+        </td>
+        <td>
+            <article>
+                <img src="fotot/foto15.jpg" alt="">
+                <h3>
+                    Xhërrokulli vjeshtor  
+                </h3>
+                <p>
+                   <b> Përdorimi:</b> Tradicionalisht është përdorë kundër zjarmisë dhe alergjisë.
+                </p>
+            </article>
+        </td>
+        <td>
+        <article>
+            <img src="fotot/foto16.jpg" alt="">
+           <h3>
+            Murrizi
+           </h3>
+           <p>
+           <b> Përdorimi:</b> Produktet e murrizit pëdoren për shërimin e sëmundjeve të zemrës dhe 
+            insuficiencës kardiake (NYHA shkalla I dhe II). 
+           </p>
+        </article>
+    </td>
+    <td>
+       <article>
+           <img src="fotot/foto17.jpg" alt="">
+          <h3>
+            Lulepëllumbi mjekësor
+          </h3>
+          <p>
+           <b> Përdorimi:</b> Përdoret në shërimin e sëmundjeve të organeve të tretjes, si diuretik 
+           dhe në shërimin e psoriazës dhe ekzemave. 
+          </p>
+       </article>
+   </td>
+</tr>
+<tr>
+<td>
+    <article>
+        <img src="fotot/foto18.jpg" alt="">
+        <h3>
+            Sanza
+        </h3>
+        <p>
+            <b>Përdorimi:</b>  Rrënjët e sanëzës përdoren si tonik, rritës të oreksit, kundër anaureksisë dhe kundër sëmundjeve të lukthit. 
+        </p>
+    </article>
+</td>
+<td>
+    <article>
+        <img src="fotot/foto19.jpg" alt="">
+       <h3>
+        Dëllinja e zezë
+       </h3>
+       <p>
+       <b> Përdorimi:</b> Përmban vajra eterike që përdoren në shërimin e organeve urinare si antiseptik, në përmirësimin e qarkullimit të gjakut etj
+       </p>
+    </article>
+</td>
+<td>
+   <article>
+       <img src="fotot/foto20.jpg" alt="">
+      <h3>
+        Manushaja trengjyrëshe
+      </h3>
+      <p>
+        <b>Përdorimi:</b> Përdoret në trajtimin e sëmundjeve të lëkurës (ekzemave dhe akneve) dhe bronkitisit.
+      </p>
+   </article>
+</td>
+<td>
+    <article>
+        <img src="fotot/foto21.jpg" alt="">
+        <h3>
+            Sporisi mjekësor
+        </h3>
+        <p>
+           <b> Përdorimi:</b> Përdoret kundër migrenës,  nervozave, si diuretik kundër etheve, astmës 
+           inflamacioneve dhe si e freskët në trajtimin e epilepsisë dhe çrregullimeve mendore. 
+        </p>
+    </article>
+</td>
+</tr>
+<tr>
+    <td>
+          <article>
+              <img src="fotot/foto22.jpg" alt="">
+              <h3>
+                Meliloti mjekësor
+              </h3>
+              <p>
+                <b>Përdorimi:</b> Përdoret për shërimin e hemorroideve, venave të zgjeruara etj. 
+              </p>
+          </article>
+      </td>
+   <td>
+       <article>
+           <img src="fotot/foto23.jpg" alt="">
+           <h3>
+               Rigoni
+           </h3>
+           <p>
+           <b> Përdorimi:</b> Përdoret kundër ftohjes dhe gripit,bronkitisit etj.
+           </p>
+       </article>
+   </td>
+   <td>
+       <article>
+           <img src="fotot/foto24.jpg" alt="">
+          <h3>
+              Kulumbria
+          </h3>
+          <p>
+           <b> Përdorimi:</b> Frutat përdoren kundër inflamacioneve në trajtimin e gojës, fytit, rrugëve të frymëmarrjes; pastaj forcon lukthin, 
+            rritë oreksin dhe largon ngërçet në bark.
+          </p>
+       </article>
+   </td>
+   <td>
+      <article>
+          <img src="fotot/foto25.jpg" alt="">
+         <h3>
+            Thundërmushka
+         </h3>
+         <p>
+           <b> Përdorimi:</b> Gjethet përdoren kundër kollit,bronkitisit, astmës, sëmundjeve të mushkërive, 
+            pastrimit të gjakut etj.
+         </p>
+      </article>
+  </td>
+</tr>
+<tr>
+<td>
+  <article>
+      <img src="fotot/fotto.jpg" alt="">
+      <h3>
+          lorem.
+      </h3>
+      <p>
+       <b> Përdorimi:</b> Përdoret si diuretik në infeksionet 
+        e traktit urinar, i lufton bakteret, pastron veshkat 
+        etj.
+      </p>
+  </article>
+</td>
+<td>
+  <article>
+      <img src="fotot/foto26.jpg" alt="">
+     <h3>
+        Bliri gjethevogël
+     </h3>
+     <p>
+        <b>Përdorimi:</b> Çaji i blirit mundëson djersitjen gjatë ftohjes dhe forcon organizmin. Veprim 
+        gati të njëjtë kanë edhe lulet e llojeve të tjera të blirit.
+     </p>
+  </article> 
+</td>
+<td>
+ <article>
+     <img src="fotot/foto27.jpg" alt="">
+    <h3>
+        Krasta e zakonshme
+    </h3>
+    <p>
+        <b>Përdorimi:</b> Bimë që pëdoret mjaft kundër ftohjes dhe inflamacioneve të rrugëve të frymëmarrjes. 
+    </p>
+ </article>
+</td>
+<td>
+<article>
+  <img src="fotot/foto28.jpg" alt="">
+  <h3>
+    Luleshurdha mjekësore
+  </h3>
+  <p>
+    <b>Përdorimi:</b> Gjethet e freskëta kanë vitaminë  C, materie minerale etj. dhe përdoren si sallatë 
+    Rrënjët kanë gjithashtu shumë materie dhe ndihmojnë punën e veshkave, mëlçisë etj.
+  </p>
+</article>
+</td>
+</tr>
+<tr>
+<td>
+<article>
+  <img src="fotot/foto29.jpg" alt="">
+  <h3>
+    Shtogu
+  </h3>
+  <p>
+  <b>Përdorimi:</b>Përdoret si çaj kundër djersitjes, pastrimit të rrugëve urinare, lehtësimit të kollit etj
+  </p>
+</article>
+</td>
+<td>
+<article>
+  <img src="fotot/foto30.jpg" alt="">
+  <h3>
+    Rutë
+  </h3>
+  <p>
+    <b>Përdorimi:</b> Përdoret kundër epilepsisë, marramendjes, kthimit të oreksit, kokëdhimbjes, 
+    për qetësim nervor, forcon të pamunit etj. 
+    
+  </p>
+</article>
+</td>
+<td>
+<article>
+<img src="fotot/foto31.jpg" alt="">
+<h3>
+    Pulmonaria mjekësore,
+</h3>
+<p>
+   <b> Përdorimi:</b> Përdoret si çaj në pastrimin e mushkërive nga këlbaza dhe kundër 
+    hemorroideve.
+</p>
+</article>
+</td>
+<td>
+<article>
+<img src="fotot/foto32.jpg" alt="">
+<h3>
+    Aguliçe e vërtetë,
+</h3>
+<p>
+    <b>Përdorimi:</b> Lulet dhe rrënjët përdorën si ekspektorant në shërimin e bronkitisit, kollit, 
+    nga myku, të ftohurit dhe pezmatimi i hundës e fytit. 
+</p>
+</article>
+</td>
+</tr>
+<tr>
+<td>
+<article>
+<img src="fotot/foto33.jpg" alt="">
+<h3>
+    Boronica
+</h3>
+<p>
+    <b>Përdorimi:</b>Gjethet përdoren për shërimin e kollit dhe diabetit, kurse fruti ka shumë 
+    antociana që kanë efekt antioksidativ, kundër gjakderdhjeve, në trajtimin e mukozës së gojës, 
+    fytit, lukthit, et
+</p>
+</article>
+</td>
+<td>
+<article>
+<img src="fotot/foto34.jpg" alt="">
+<h3>
+    Krasta e zakonshme
+</h3>
+<p>
+    <b>Përdorimi:</b> Bimë që pëdoret mjaft kundër ftohjes dhe inflamacioneve të rrugëve të frymëmarrjes.
+</p>
+</article>
+</td>
+<td>
+<article>
+<img src="fotot/foto35.jpg" alt="">
+<h3>
+    Heraqina mjekësore
+</h3>
+<p>
+    <b>Përdorimi:</b> Rrënjët përdoren për shërimin e sistemit nervor, epilepsisë, nervozave, lukthit, 
+    ritmit të zemrës, rritjen e oreksit, pastrimin e gjakut.
+</p>
+</article>
+</td>
+<td>
+<article>
+<img src="fotot/foto36.jpg" alt="">
+<h3>
+    Bari i peshkut
+</h3>
+<p>
+    <b>Përdorimi:</b> Lulet përdoren në trajtimin e rrugëve të frymëmarrjes, bronkitisit, 
+    mushkërive, astmës si dhe në shërimin e sëmundjeve të lëkurës. 
+</p>
+</article>
+</td>
+</tr>
+            </table>
+        </section>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+            </script>
+            
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.2510123076772!2d21.173798814684996!3d42.65603587916813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549fbe6fd1af9d%3A0xac32271f4cce876a!2sBio-Pharm!5e0!3m2!1sen!2s!4v1637655556617!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <br><br>
+        <a style="color: red; text-decoration: none;" href="bimet.html" ><b><i> www.malva-biopharmacy.com </i></b></a>
+        </footer>
+    </body>
+</html>
