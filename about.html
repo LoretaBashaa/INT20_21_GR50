@@ -2,15 +2,33 @@
 <html>
     <head>
          <meta charset="UTF-8">
-         <meta name="viewport" content="width=device, initial-scale=1.0">
          <title>Bio pharmacy-MALVA</title>
-    </head>
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+         <script>
+            $(document).ready(function(){
+              $(".sec").on({
+                mouseenter: function(){
+                  $(this).css("background-color", "lightgray");
+                },  
+                mouseleave: function(){
+                  $(this).css("background-color", "lightgreen");
+                }, 
+                click: function(){
+                  $(this).css("background-color", "gray");
+                }  
+              });
+            });
+            </script>
+        </head>
     <style>
          *{
                 margin: 0;
                 padding: 0;
                 font-family: 'Anton', sans-serif;
                 font-family: 'Source Sans Pro', sans-serif;
+             }
+             body{
+                 background-color: grey;
              }
               .header{
                     min-height: 100vh;
@@ -97,7 +115,7 @@
                .kont{
                    margin: 20px auto;
                    width: 97%;
-                   background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)), url(foto4.jpg) ;
+                   background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)), url(fotot/foto4.jpg) ;
                    background-position: center;
                    background-size: cover;
                    border-radius: 10px;
@@ -179,13 +197,17 @@
                   </div>
                 </div>
      </section>
-     <section>
-         <h3>Informata me te shumta rreth bimeve dhe kerpudhave qe perdorim mund ti gjeni: <a href="http://helvetas-ks.org/s4re/wp-content/uploads/2014/05/Atllasi_i_Bimeve_Mjeksore_Aromatike_dhe_Kerpudhave_-_FINAL.pdf" target="_blank">Ketu</a></h3>
+     <section class="sec" style="background-color: grey;">
+         <h3>Informata me te shumta rreth bimeve dhe kerpudhave qe perdorim mund ti gjeni: <a  style="text-decoration: none;list-style: none; color: black;" href="http://helvetas-ks.org/s4re/wp-content/uploads/2014/05/Atllasi_i_Bimeve_Mjeksore_Aromatike_dhe_Kerpudhave_-_FINAL.pdf" target="_blank">Ketu</a></h3>
      </section>
      <section class="kont">
+         <br>
+         <br>
          <h1>
              Per cdo paqartesi na kontaktoni ketu...
+             
          </h1>
+         <br><br>
          <a href="porosia.html" class="kliko" target="blank">KONTAKTO</a>
      </section>
     </body>
