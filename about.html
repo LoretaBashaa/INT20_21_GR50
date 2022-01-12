@@ -18,6 +18,29 @@
                 }  
               });
             });
+
+
+
+            $(document).ready(function(){
+              $("#a").click(function(){
+              $(".rrethnesha").toggle();
+              });
+            });
+
+          $(document).ready(function(){
+             $("#b").click(function(){
+                 $(".rrethneshb").toggle();
+                  });
+              });
+
+              $(document).ready(function(){
+               $("#c").click(function(){
+                $(".rrethneshc").toggle();
+              });
+                });
+
+
+
             </script>
         </head>
     <style>
@@ -96,7 +119,23 @@
                    display: flex;
                    justify-content: space-between;
                }
-               .rrethnesh{
+               .rrethnesha{
+                   flex-basis: 31%;
+                   background: rgb(228, 228, 228);
+                   border-radius: 10px;
+                   border-bottom: 5%;
+                   padding: 20px 15px;
+                   box-sizing: border-box;
+               }
+               .rrethneshb{
+                   flex-basis: 31%;
+                   background: rgb(228, 228, 228);
+                   border-radius: 10px;
+                   border-bottom: 5%;
+                   padding: 20px 15px;
+                   box-sizing: border-box;
+               }
+               .rrethneshc{
                    flex-basis: 31%;
                    background: rgb(228, 228, 228);
                    border-radius: 10px;
@@ -109,7 +148,11 @@
                    font-weight: 600;
                    margin: 10px 0;
                }
-               .rrethnesh:hover{
+               .rrethnesha:hover{
+                   box-shadow: 0 0 20px 0px #1ead42;}
+                   .rrethneshb:hover{
+                   box-shadow: 0 0 20px 0px #1ead42;}
+                   .rrethneshc:hover{
                    box-shadow: 0 0 20px 0px #1ead42;
                }
                .kont{
@@ -169,21 +212,31 @@
                     Njoftime rreth bio farmacise tone
                 </h1>
             </nav>    
-                <div class="rresht">
-                  <div class="rrethnesh">
+
+                <div class="rresht" style="margin: 10px;">
+                    <button style="background-color: #1ead42;"  id="a"><b> Rreth nesh</b></button>
+                  <div class="rrethnesha">
+                      
                      <h3> <i>Rreth nesh</i></h3>
-                      <p>  <b>
+                      <p>  
+                          <b>
                           Farmacia jone eshte nje nga farmacit e paketa qe krijon mundesi sherimi bio, dhe kjo nga bime dhe kerpudha qe gjenden ne Kosove. Ne faqen tone munde te gjeni me shume informata rreth nesh, duke perfshire llojet e bimeve dhe kerpudhave, menyren si perdoren dhe mund te rezervoni per ndonje nga barnat tona me porosi online.
                           </b>
                       </p>
                  </div>
-                 <div class="rrethnesh">
+
+                 <button style="background-color: #1ead42; "  id="b"><b> Historiku</b></button>
+                 <div class="rrethneshb">
+                     
                     <h3><i>Historiku</i></h3>
                     <p>
                        <b> Bio farmacia jone ka marr emrin Malva nga nje prej luleve sheruese te cilen e kemi perdorur per here te pare per sherim, eshte farmaci qe eshte themeluar qe gati 2 vite dhe ploteson kriteret e nevojshme per te funksionuar ne menyren me te mire</b>
                     </p>
                 </div>
-                   <div class="rrethnesh">
+
+                <button style="background-color: #1ead42;"  id="c"><b> Kriteret e punes</b></button>
+                   <div class="rrethneshc">
+                       
                       <h3><i> Kriteret e punes</i></h3>
                      <p>
                        <b>
