@@ -3,12 +3,20 @@
 
     <head>
          <meta charset="UTF-8">
-         <meta name="viewport" content="width=device, initial-scale=1.0">
          <title>Bio pharmacy-MALVA</title>
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
          <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script> 
 
-        <script>
+         $(document).ready(function(){
+           $(".box").click(function(){
+             var span = $(".box");  
+             span.animate({left: '300px'}, "slow");
+             span.animate({fontSize: '6.3em'}, "slow");
+           });
+         });
+       
             $(document).ready(function(){
               $(".linku").click(function(){
                 alert("Pranon te shperndash te dhenat per tu kyqur...");
@@ -136,7 +144,9 @@
          </div>
         </nav>
      <div class="text-box">
+         <span class="box">
         <h1>Bio farmacia "MALVA"</h1>
+        <span>
         <p>"Investimi ne shendet sjell perfitime te medha. Pa shendet nuk mund te arrish asgje e derisa ke shendetin mund ti arrish gjitha gjerat tjera."</p> 
         <p class="linku"><a href="kyqu.html" target="_break" style="text-decoration: none; color: white;"> Kliko ketu per tu kyqur ne faqe</a></p>
         <a href="about.html" class="kliko">Na vizitoni per te ditur me shume rreth nesh</a>   
