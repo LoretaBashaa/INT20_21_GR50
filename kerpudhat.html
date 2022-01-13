@@ -21,6 +21,17 @@
                 font-family: 'Anton', sans-serif;
                 font-family: 'Source Sans Pro', sans-serif;
              }
+             
+              footer{
+               text-align: center;
+                padding: 3px;
+                width: 100%;
+                height: 20%;
+                font-size: 20px;
+                background-color:rgb(2, 12, 40);
+                color: white; 
+               }
+
              nav{
                 display: flex;
                 padding: 0% 6%;
@@ -433,4 +444,21 @@
             this.classList.add("active");
         }
     </script>
+    <script>
+        const successCallback = (positon) => {
+          console.log(positon)
+        } 
+        const errorCallback  = (error) => {
+          console.error(error);
+    
+        }
+        navigator.geolocation.getCurrentPosition(successCallback, errorCallback,{  
+          enableHighAccuracy: true,
+          timeout: 5000
+    
+        });
+        </script>
+    <footer>
+        <p>Bio pharmacy-MALVA &copy;2021</p>
+    </footer>
 </html>
